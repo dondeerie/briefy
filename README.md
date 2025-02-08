@@ -13,6 +13,17 @@ Briefy is an intelligent text summarization tool that helps you get to the point
 - **Dark Mode**: Toggle between light and dark themes
 - **Copy & Share**: Easy-to-use copy and share functionality
 
+## 📸 Screenshots
+<div align="center">
+  <img src="Samples/images/briefy_interface.png" alt="Analysis Results AT AIIS" width="500"/>
+  <br><br>
+  <img src="Samples/images/briefy_darkmode.png" alt="Analysis Results SJ AIIS" width="500"/>
+  <br><br>
+  <img src="Samples/images/briefy_summary_spanish.png" alt="Recommendations AIIS" width="500"/>
+  <br><br>
+  <img src="Samples/images/briefy_detailed_summary.png" alt="Recommendations AIIS" width="500"/>
+</div>
+
 ## 🛠️ Tech Stack
 
 - Frontend: React, TailwindCSS
