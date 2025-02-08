@@ -1,0 +1,22 @@
+{
+  "name": "briefy",
+  "version": "1.0.0",
+  "description": "A streamlined text summarization tool that helps you get to the point, fast.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
+    "lucide-react": "^0.474.0",
+    "postcss": "^8.5.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.3"
+  }
+}
