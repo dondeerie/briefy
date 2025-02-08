@@ -21,7 +21,7 @@ Briefy is an intelligent text summarization tool that helps you get to the point
 - Document Processing: PyPDF2, python-docx
 
 ## 📁 Project Structure
-
+```
 briefy/
 ├── frontend/          # React application
 ├── backend/           # FastAPI server
@@ -29,7 +29,7 @@ briefy/
 │   ├── documents/     # Sample PDFs and DOCXs
 │   └── images/        # UI screenshots
 └── README.md
-
+```
 ## 🚀 Installation
 
 1. Clone the repository:
