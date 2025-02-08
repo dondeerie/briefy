@@ -4,15 +4,6 @@
 
 Briefy is an intelligent text summarization tool that helps you get to the point, fast. It processes text from multiple sources and generates concise, meaningful summaries using OpenAI's powerful language models.
 
-## 🎯 Features
-
-- **Multi-Source Input**: Accept text via direct input, URL, PDF, or DOCX files
-- **Flexible Summarization**: Choose between brief overview or detailed analysis
-- **Language Support**: Maintains original language in summaries
-- **History Tracking**: Keep track of recent summaries
-- **Dark Mode**: Toggle between light and dark themes
-- **Copy & Share**: Easy-to-use copy and share functionality
-
 ## 📸 Screenshots
 <div align="center">
   <img src="Samples/images/briefy_interface.png" alt="Analysis Results AT AIIS" width="500"/>
@@ -23,6 +14,15 @@ Briefy is an intelligent text summarization tool that helps you get to the point
   <br><br>
   <img src="Samples/images/briefy_detailed_summary.png" alt="Recommendations AIIS" width="500"/>
 </div>
+
+## 🎯 Features
+
+- **Multi-Source Input**: Accept text via direct input, URL, PDF, or DOCX files
+- **Flexible Summarization**: Choose between brief overview or detailed analysis
+- **Language Support**: Maintains original language in summaries
+- **History Tracking**: Keep track of recent summaries
+- **Dark Mode**: Toggle between light and dark themes
+- **Copy & Share**: Easy-to-use copy and share functionality
 
 ## 🛠️ Tech Stack
 
@@ -44,32 +44,32 @@ briefy/
 ## 🚀 Installation
 
 1. Clone the repository:
-  git clone https://github.com/yourusername/briefy.git
-  cd briefy
+git clone https://github.com/yourusername/briefy.git
+cd briefy
 
 2. Setup Backend:
-  cd backend
-  python -m venv venv
-  source venv/bin/activate  # Windows: venv\Scripts\activate
-  pip install -r requirements.txt
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
 3. Setup Frontend:
-  cd frontend
-  npm install
+cd frontend
+npm install
 
 4. Environment Setup:
-  Create .env file in backend directory with:
-  OPENAI_API_KEY=your_api_key_here
+Create .env file in backend directory:
+OPENAI_API_KEY=your_api_key_here
 
 ## 🎮 Usage
 
 1. Start Backend Server:
-  cd backend
-  python main.py
+cd backend
+python main.py
 
 2. Start Frontend:
-  cd frontend
-  npm start
+cd frontend
+npm start
 
 3. Access the application at http://localhost:3000
 
@@ -85,8 +85,18 @@ briefy/
 
 ## 🧰 API Endpoints
 
-- POST /api/summarize - Process direct text or URLs
-- POST /api/summarize/file - Process uploaded files
+Text and URL Summarization:
+POST /api/summarize
+Request body:
+{
+ "text": "string",
+ "url": "string",
+ "type": "brief | detailed"
+}
+
+File Summarization:
+POST /api/summarize/file
+Multipart form data with file upload
 
 ## 🎨 UI Features
 
@@ -97,9 +107,25 @@ briefy/
 - Copy to clipboard
 - Summary history
 
-## 📝 Notes
+## 🧪 Testing
 
-- **Language Handling**: The app is designed to maintain the original language of the input text in summaries. This has been thoroughly tested with English, Spanish, and French texts. While other languages may work, results may vary in maintaining the original language.
+Frontend: npm test
+Backend: pytest
+
+## 📝 Dependencies
+
+Frontend:
+- React 18.x
+- TailwindCSS
+- Axios
+- Lucide React
+
+Backend:
+- FastAPI
+- OpenAI
+- PyPDF2
+- python-docx
+- beautifulsoup4
 
 ## 📜 License
 
@@ -107,9 +133,18 @@ MIT License
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome! See CONTRIBUTING.md for guidelines.
 
 ## 📬 Contact
 
 - Don Deerie B. Dumayas - [LinkedIn: http://linkedin.com/in/ddumayas34959b28]
 - Project Link: https://github.com/dondeerie/briefy
+
+## 📖 Changelog
+
+See CHANGELOG.md for version history and updates.
+
+## 🙏 Acknowledgments
+
+- OpenAI for GPT API
+- All contributors and users of Briefy
