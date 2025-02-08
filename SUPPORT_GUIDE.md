@@ -100,6 +100,18 @@ Fix Dark Mode:
 5. Install backend dependencies
 6. Start servers (backend: 5001, frontend: 3000)
 
+## Environment Setup Issues
+- Error: "Invalid API key"
+  Solution: Double-check OPENAI_API_KEY format and validity
+- Error: "API key not found"
+  Solution: Ensure .env file is in correct location and properly formatted
+
+## Integration Issues
+- Error: "Frontend can't connect to backend"
+  Solution: Verify ports (3000 and 5001) are correct and available
+- Error: "File upload timeout"
+  Solution: Check file size limits and connection stability
+
 ## Contact and Support
 For additional issues or support:
 - Create GitHub issue
